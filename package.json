@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/almero-digital-marketing/mikser-io-post-mjml#readme",
   "peerDependencies": {
-    "mikser-io": "^6.0.0"
+    "mikser-io": "^6.3.0"
   },
   "dependencies": {
     "mjml": "^5.2.1"
