@@ -1,0 +1,24 @@
+{
+  "name": "mikser-io-post-mjml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almero-digital-marketing/mikser-io-post-mjml.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/almero-digital-marketing/mikser-io-post-mjml/issues"
+  },
+  "homepage": "https://github.com/almero-digital-marketing/mikser-io-post-mjml#readme",
+  "peerDependencies": {
+    "mikser-io": "^6.0.0"
+  },
+  "dependencies": {
+    "mjml": "^5.2.1"
+  }
+}
