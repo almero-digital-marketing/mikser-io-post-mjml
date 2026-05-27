@@ -2,6 +2,8 @@
 
 [MJML](https://www.npmjs.com/package/mjml) postprocessor for [Mikser](https://github.com/almero-digital-marketing/mikser-io). Compiles a rendered MJML document into responsive email-safe HTML.
 
+Multi-format publishing — when the same source content needs to ship as both a web page *and* a responsive email. MJML compiles down to the table-soup HTML that survives Outlook, Gmail, Apple Mail, every dark-mode quirk. Sits in mikser's postprocess phase, so emails build in the same pipeline as the rest of the site — no separate email build script, no MJML CLI, no out-of-band sync.
+
 ## Install
 
 ```bash
