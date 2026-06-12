@@ -14,15 +14,18 @@ npm install mikser-io-post-mjml
 
 ```js
 // mikser.config.js
+import { postMjml } from 'mikser-io-post-mjml'
+
 export default {
-  plugins: ['post-mjml'],
-  'post-mjml': {
-    options: { keepComments: false, minify: true }
-  }
+  plugins: [
+    postMjml({
+      options: { keepComments: false, minify: true }
+    })
+  ]
 }
 ```
 
-`'post-mjml'.options` is passed through to [`mjml2html`](https://www.npmjs.com/package/mjml). The plugin sets `validationLevel: 'soft'` by default.
+The `options` key is passed through to [`mjml2html`](https://www.npmjs.com/package/mjml). The plugin sets `validationLevel: 'soft'` by default.
 
 ## Layout naming
 
