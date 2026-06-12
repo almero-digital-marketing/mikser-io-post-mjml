@@ -24,3 +24,13 @@ export async function postprocess({ entity, options, config, logger }) {
 
     return html
 }
+
+// v9 factory — ADR-0010.
+export function postMjml(options = {}) {
+    return {
+        name: options.name ?? 'mjml',
+        options,
+        output,
+        postprocess,
+    }
+}
