@@ -1,10 +1,10 @@
 import mjml2html from 'mjml'
-import { readFile } from 'node:fs/promises'
+import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 
 // Declare the produced file extension so mikser-io can compute the
 // destination correctly even though the postprocessor name and the
-// output extension differ. Requires mikser-io >= 6.3.
+// output extension differ.
 export const output = 'html'
 
 export async function postprocess({ entity, options, config, logger }) {
@@ -22,7 +22,14 @@ export async function postprocess({ entity, options, config, logger }) {
         }
     }
 
-    return html
+    // File-path contract: write directly to entity.destination, return
+    // its path so the chain dispatcher can thread it as the next stage's
+    // origin. Intermediates land in scratch under runtimeFolder; final
+    // stage's destination is the outputFolder/<destination>.
+    const outputPath = path.join(options.outputFolder, entity.destination)
+    await mkdir(path.dirname(outputPath), { recursive: true })
+    await writeFile(outputPath, html)
+    return { success: true, result: entity.destination }
 }
 
 // v9 factory — ADR-0010.
