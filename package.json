@@ -1,7 +1,7 @@
 {
   "name": "mikser-io-post-mjml",
-  "version": "5.0.0",
-  "description": "",
+  "version": "5.0.1",
+  "description": "MJML postprocessor for Mikser. Compiles a rendered MJML document into responsive email-safe HTML.",
   "main": "index.js",
   "type": "module",
   "scripts": {},
