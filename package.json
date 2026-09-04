@@ -20,5 +20,8 @@
   },
   "dependencies": {
     "mjml": "^5.3.0"
+  },
+  "devDependencies": {
+    "mikser-io": "^10.0.0"
   }
 }
