@@ -4,7 +4,9 @@
   "description": "MJML postprocessor for Mikser. Compiles a rendered MJML document into responsive email-safe HTML.",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "test": "node --no-warnings --test --test-reporter=spec 'test/**/*.test.js'"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/almero-digital-marketing/mikser-io-post-mjml.git"
