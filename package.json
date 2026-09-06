@@ -1,6 +1,6 @@
 {
   "name": "mikser-io-post-mjml",
-  "version": "6.0.0",
+  "version": "11.0.1",
   "description": "MJML postprocessor for Mikser. Compiles a rendered MJML document into responsive email-safe HTML.",
   "main": "index.js",
   "type": "module",
@@ -18,12 +18,12 @@
   },
   "homepage": "https://github.com/almero-digital-marketing/mikser-io-post-mjml#readme",
   "peerDependencies": {
-    "mikser-io": "^10.0.0"
+    "mikser-io": "^11.0.1"
   },
   "dependencies": {
     "mjml": "^5.3.0"
   },
   "devDependencies": {
-    "mikser-io": "^10.0.0"
+    "mikser-io": "^11.0.1"
   }
 }

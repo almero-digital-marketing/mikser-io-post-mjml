@@ -38,6 +38,6 @@ export function postMjml(options = {}) {
         name: options.name ?? 'mjml',
         options,
         output,
-        postprocess,
+        postprocess, module: import.meta.url,
     }
 }
